@@ -11,15 +11,7 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex flex-col lg:flex-row items-center justify-between px-6 lg:px-16 py-16 overflow-hidden bg-gradient-to-br from-blue-50 via-blue-100 to-blue-200">
-      {/* Logo */}
-      <motion.img
-        src={logo}
-        alt="NurseMoves Logo"
-        className="absolute top-4 left-6 w-32 h-auto z-20"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      />
+
 
       {/* Left Section - Text */}
       <motion.div
@@ -69,7 +61,7 @@ const HeroSection = () => {
           loop
           muted
           playsInline
-          className="max-h-[500px] lg:max-h-[600px] w-auto rounded-2xl mt-7 shadow-lg border border-blue-200"
+          className="max-h-[500px] lg:max-h-[600px] w-auto rounded-2xl shadow-lg border mt-5 border-blue-200"
         />
       </motion.div>
     </section>
