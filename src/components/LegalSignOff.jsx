@@ -96,7 +96,7 @@ const LegalSignOff = () => {
         transition={{ duration: 1 }}
       >
         <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
-          Legal Agreement & Beta Sign-Off
+          Legal Agreement & Beta Sign-Up
         </h2>
         <p className="text-gray-700 mb-8 text-center">
           Please read and sign the agreement below to join the NurseMoves Beta Program.
