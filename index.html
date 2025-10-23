@@ -1,76 +1,41 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- ✅ ALL YOUR FAVICONS - VITE SYNTAX -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-
-    <!-- ✅ TITLE FIXED -->
-    <title>Nurse Moves — "Burnout is not your badge. Self-care is!"</title>
-
-    <!-- Keep all your existing meta tags -->
-
-    <meta name="application-name" content="Nurse Moves" />
-
-    <meta name="apple-mobile-web-app-title" content="Nurse Moves" />
-    
-    <meta property="og:site_name" content="Nurse Moves" />
-
-    <meta
-      name="description"
-      content="Join Nurse Moves — the first all-in-one wellness and career platform made for nurses. Get early access to mental health tools, global relocation support, and exclusive beta features."
-    />
-    <meta
-      name="keywords"
-      content="Nurse Moves, nurses, wellness app, nurse burnout, nurse wellness, global relocation, healthcare, nursing career, mental health, beta app"
-    />
-    <meta name="author" content="Nurse Moves Team" />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Nurse Moves — Empowering Nurses to Move Forward" />
-    <meta
-      property="og:description"
-      content="Be part of the Nurse Moves Beta — 100 handpicked nurses shaping the future of wellness and career growth for nurses worldwide."
-    />
-    <meta property="og:image" content="https://nursemoves.com/icon.jpg" />
-    <meta property="og:url" content="https://nursemoves.com/" />
-    <meta property="og:type" content="website" />
-
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Nurse Moves — Nurse Wellness & Career Platform" />
-    <meta
-      name="twitter:description"
-      content="Join the Nurse Moves Beta — redefining wellness, mindfulness, and opportunities for nurses worldwide."
-    />
-    <meta name="twitter:image" content="https://nursemoves.com/icon.jpg" />
-
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Nurse Moves",
-        "url": "https://nursemoves.com",
-        "logo": "https://nursemoves.com/icon.jpg",
-        "sameAs": [
-          "https://www.linkedin.com/company/nursemoves",
-          "https://www.instagram.com/nursemoves"
-        ],
-        "description": "Nurse Moves empowers nurses globally with wellness, career growth, and community-driven support."
-      }
-    </script>
-  </head>
-
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+{
+  "name": "Nurse Moves",
+  "short_name": "Nurse Moves",
+  "description": "Nurse Moves — Burnout is not your badge. Self-care is!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
