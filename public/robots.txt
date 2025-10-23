@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.nursemoves.com/sitemap.xml
+
+# Nurse Moves SEO crawl directives
+# This file allows all search engines (Google, Bing, etc.)
+# to index your public pages while blocking none.
+# Keep private or test URLs out of search by adding "Disallow: /path"
