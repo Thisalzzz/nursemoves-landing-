@@ -24,8 +24,8 @@ const FeatureSection = () => {
     {
       id: 2,
       title: 'Pulse Social',
-      description: 'The world’s first social platform built exclusively for nurses to connect, share, and thrive.',
-      description2: "The first social space where every post, comment, and connection speaks your language — nursing. → No explaining, no judgment — just a safe, inspiring space to share your wins, vent your struggles, and connect with nurses around the world.",
+      description: 'This social platform is built exclusively for nurses to connect, share, and thrive.',
+      description2: "A social space where every post, comment, and connection speaks your language — nursing. → No explaining, no judgment — just a safe, inspiring space to share your wins, vent your struggles, and connect with nurses around the world.",
       highlight: 'You deserve a place where your voice is heard, your experiences are understood, and your journey is celebrated.',
       phoneImage: pulse,
       reverse: true,
