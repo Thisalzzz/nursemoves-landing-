@@ -37,6 +37,7 @@ const LegalSignOff = () => {
       !formData.fullName ||
       !formData.email ||
       !formData.country ||
+      !formData.role ||
       !formData.signature ||
       !formData.checkbox1 ||
       !formData.checkbox2 ||
@@ -133,15 +134,23 @@ const LegalSignOff = () => {
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
 
-          {/* Nursing Role */}
-          <input
-            type="text"
-            name="role"
-            placeholder="Nursing Role (Optional)"
-            value={formData.role}
-            onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-          />
+    {/* Nursing Role (Dropdown) */}
+        <select
+          name="role"
+          value={formData.role}
+          onChange={handleChange}
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white"
+          required
+        >
+          <option value="">Select Nursing Role *</option>
+          <option value="Registered Nurse (RN)">Registered Nurse (RN)</option>
+          <option value="Nurse Practitioner (NP)">Nurse Practitioner (NP)</option>
+          <option value="Licensed Practical Nurse (LPN)">Licensed Practical Nurse (LPN)</option>
+          <option value="Certified Nursing Assistant">Certified Nursing Assistant</option>
+          <option value="Student Nurse">Student Nurse</option>
+          <option value="Other">Other</option>
+        </select>
+
 
           {/* Checkboxes */}
           <div className="space-y-2">
