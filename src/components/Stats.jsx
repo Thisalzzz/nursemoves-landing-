@@ -8,7 +8,7 @@ const StatsSlider = () => {
       text: "of nurses in the US reported experiencing burnout (American Nurses Foundation, 2023)",
     },
     {
-      number: "91%",
+      number: "56%",
       text: "of nurses report feeling burned out at least once a week (NIOSH)",
     },
     {
