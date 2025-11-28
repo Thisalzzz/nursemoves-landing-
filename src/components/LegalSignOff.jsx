@@ -352,41 +352,103 @@ const LegalSignOff = () => {
                       b.Testers will be notified of any significant changes. Continued participation constitutes acceptance of updated terms.`
 
 
-                  : `1. NON-DISCLOSURE, NON-COMPETE, AND INTELLECTUAL PROPERTY AGREEMENT (EMPLOYEE)
-                      This Agreement is entered into on [Date] by and between Protect Your Temple Fitness LLC d/b/a Nurse Moves (“Company” or “Nurse Moves”), incorporated under the laws of Illinois, USA, with principal offices at 159 N. Sangamon Ave, Chicago, IL 60607, and [Employee Name], residing at [Employee Address] (“Employee”).
-                      1. PURPOSE
-                      This Agreement governs the protection of all confidential, proprietary, and sensitive business, technical, and user-related information disclosed or accessed by the Employee during and after employment with Nurse Moves.
-                      2. DEFINITIONS
-                      •	Confidential Information includes, without limitation, all business, technical, financial, product, and strategic information (including user data, healthcare data, designs, algorithms, wireframes, UI/UX concepts, source code, trade secrets, pricing, financials, marketing plans, and internal operations).
-                      •	Work Product means all deliverables, inventions, writings, designs, media, algorithms, processes, and intellectual property created by Employee during employment that relates to Nurse Moves’ business.
-                      3. OBLIGATIONS OF CONFIDENTIALITY
-                      Employee shall:
-                      a. Keep all Confidential Information strictly confidential and not disclose to any third party without prior written consent.
-                      b. Use Confidential Information solely for the benefit of Nurse Moves.
-                      c. Not reproduce, reverse engineer, decompile, or create derivative works of Confidential Information.
-                      d. Comply with all applicable data protection laws (HIPAA, GDPR where applicable).
-                      e. Immediately notify Nurse Moves of any unauthorized use or disclosure.
-                      f. Maintain confidentiality indefinitely, including after termination.
-                      4. NON-COMPETE AND NON-SOLICITATION
-                      For eighteen (18) months following termination of employment, Employee shall not, without prior written consent of Nurse Moves:
-                      a. Engage, directly or indirectly, with any business that is substantially similar to or competes with Nurse Moves’ mental health, wellness, or nurse-focused technology services within North America or any territory where Nurse Moves operates or has active business plans.
-                      b. Solicit or induce employees, contractors, users, or clients of Nurse Moves with whom Employee had material contact during the last twelve (12) months of employment.
-                      Note: If any court deems this restriction too broad, the parties agree it shall be modified to the maximum enforceable scope.
-                      5. OWNERSHIP AND INTELLECTUAL PROPERTY
-                      a. All Work Product created by Employee is the sole and exclusive property of Nurse Moves.
-                      b. Employee irrevocably assigns all rights, title, and interest, including copyrights, patents, trademarks, trade secrets, and moral rights, to Nurse Moves.
-                      c. Employee waives all moral rights to the extent permitted by law.
-                      6. RETURN AND DESTRUCTION OF MATERIALS
-                      Within ten (10) business days after termination, Employee shall return or destroy all Nurse Moves property and Confidential Information and certify in writing such return/destruction.
-                      7. GOVERNING LAW AND JURISDICTION
-                      This Agreement shall be governed by and construed under the laws of the State of Illinois, USA, and the Employee agrees to submit to the exclusive jurisdiction of Illinois courts.
-                      8. REMEDIES
-                      Nurse Moves shall be entitled to injunctive relief, equitable remedies, and damages without the need to show actual harm or post bond.
-                      9. MISCELLANEOUS
-                      •	Binding on successors and assigns.
-                      •	No waiver unless in writing.
-                      •	Severability applies if any provision is invalid.
-                      Modifications must be in writing and signed by both parties
+                  : `Effective Date: Upon User’s Acceptance
+Parties:
+This Beta Tester Non-Disclosure and Use Agreement (“Agreement”) is entered into between Nurse Moves, LLC and the individual user completing the registration form.
+
+By clicking “I Accept”, Tester agrees to be legally bound by this Agreement.
+
+1. Purpose of Agreement
+
+Tester is granted limited, revocable access to a closed beta version of the Company’s mobile and/or web platform (“Beta Product”) solely for evaluating performance, identifying issues, and providing feedback to the Company.
+
+2. Confidential Information
+
+“Confidential Information” includes, without limitation:
+
+Product features, screens, workflows, UI/UX, designs, wireframes
+
+System behavior, backend logic, architecture
+
+Business models, pricing, internal strategy
+
+Documentation, instructions, testing processes
+
+Communications between Company and Tester
+
+Analytics, crash logs, performance metrics
+
+All feedback, bug reports, and insights
+
+3. Tester Responsibilities
+
+Tester agrees to:
+
+Maintain strict confidentiality of all Beta Product information.
+
+Not disclose, copy, screenshot, record, or publicly share any aspect of the Beta Product.
+
+Use the Beta Product only for testing and evaluation.
+
+Provide voluntary feedback and report issues.
+
+Immediately notify the Company of breaches or unauthorized access.
+
+The Company may collect usage analytics, crash logs, diagnostic data, and performance metrics solely for testing and product improvement.
+
+4. Intellectual Property
+
+All intellectual property rights in the Beta Product remain exclusively with the Company. Tester receives no ownership or license beyond limited testing access.
+
+Tester grants the Company a perpetual, royalty-free license to use feedback for improvement purposes.
+
+5. User-Generated Content (UGC) — Added as per your request
+
+Any content, ideas, materials, routines, text, video, audio, creative work, or intellectual submissions provided by the Tester during the beta program (“User Content”) remain the sole property of the Tester or original creator.
+
+By participating in the beta, Tester grants the Company a limited, non-exclusive, royalty-free license to use User Content only for:
+
+testing functionality
+
+internal evaluation
+
+improving the platform
+
+operational purposes related to the beta
+
+This Agreement does not assign or transfer ownership of User Content to the Company.
+
+Tester warrants that all User Content provided is owned by them or that they have the legal right to submit it.
+
+6. Disclaimer & Limitation of Liability
+
+The Beta Product is provided “AS IS,” without warranties of any kind.
+Company is not liable for any data loss, errors, or damages arising from beta use.
+
+The Company’s total liability under this Agreement is limited to USD $100.
+
+7. Term & Termination
+
+This Agreement remains in effect until the Company ends the beta program or Tester’s access is revoked.
+Confidentiality obligations survive indefinitely.
+
+The Company may terminate access at any time without notice.
+
+8. Governing Law & Remedies
+
+This Agreement is governed by the laws of the State of Illinois, USA.
+Any breach of confidentiality may result in injunctive relief and monetary damages.
+Notices may be sent electronically to the email provided by Tester.
+
+9. Digital Acceptance
+
+By checking the acceptance box and clicking “I Accept the NDA and Terms & Conditions”, Tester acknowledges:
+
+They have read, understood, and agree to this Agreement.
+
+They consent to electronic signature and electronic delivery of records.
+
+Their acceptance constitutes a legally binding digital signature.
 `}
               </p>
             </motion.div>
