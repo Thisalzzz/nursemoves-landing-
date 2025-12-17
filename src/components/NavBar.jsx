@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react"; // modern icons
 import { Link } from "react-router-dom"; // ✅ import Link
+<<<<<<< HEAD
 import logo from "../assets/logo.jpeg"; // updated logo path
+=======
+import logo from "../assets/logo.png";
+>>>>>>> 8678a27dbd5e92fea84c27e92521586b01983622
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +25,11 @@ const Navbar = () => {
               <img
                 src={logo}
                 alt="Logo"
+<<<<<<< HEAD
                 className="h-15 mt-1 w-18 cursor-pointer"
+=======
+                className="h-20 mt-3 w-auto cursor-pointer"
+>>>>>>> 8678a27dbd5e92fea84c27e92521586b01983622
               />
             </Link>
           </div>

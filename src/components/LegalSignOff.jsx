@@ -5,6 +5,7 @@ import { collection, addDoc, query, where, getDocs } from "firebase/firestore";
 import emailjs from "@emailjs/browser";
 
 const LegalSignOff = () => {
+<<<<<<< HEAD
 const [formData, setFormData] = useState({
   fullName: "",
   email: "",
@@ -18,6 +19,18 @@ const [formData, setFormData] = useState({
   signature: "",
 });
 
+=======
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    country: "",
+    role: "",
+    checkbox1: false,
+    checkbox2: false,
+    checkbox3: false,
+    signature: "",
+  });
+>>>>>>> 8678a27dbd5e92fea84c27e92521586b01983622
 
   const [date] = useState(new Date().toLocaleDateString());
   const [loading, setLoading] = useState(false);
@@ -39,6 +52,7 @@ const [formData, setFormData] = useState({
     setSuccess(false);
 
     // Simple validation
+<<<<<<< HEAD
 if (
   !formData.fullName ||
   !formData.email ||
@@ -55,6 +69,21 @@ if (
   return;
 }
 
+=======
+    if (
+      !formData.fullName ||
+      !formData.email ||
+      !formData.country ||
+      !formData.role ||
+      !formData.signature ||
+      !formData.checkbox1 ||
+      !formData.checkbox2 ||
+      !formData.checkbox3
+    ) {
+      setError("⚠️ Please fill all required fields and agree to all conditions.");
+      return;
+    }
+>>>>>>> 8678a27dbd5e92fea84c27e92521586b01983622
 
     setLoading(true);
 
@@ -92,20 +121,32 @@ if (
       );
 
       setSuccess(true);
+<<<<<<< HEAD
       
       setFormData({
         fullName: "",
         email: "",
         phone: "",
         state: "",
+=======
+      setFormData({
+        fullName: "",
+        email: "",
+        country: "",
+>>>>>>> 8678a27dbd5e92fea84c27e92521586b01983622
         role: "",
         checkbox1: false,
         checkbox2: false,
         checkbox3: false,
+<<<<<<< HEAD
         checkbox4: false,
         signature: "",
       });
 
+=======
+        signature: "",
+      });
+>>>>>>> 8678a27dbd5e92fea84c27e92521586b01983622
     } catch (err) {
       console.error(err);
       setError("❌ Something went wrong. Please try again later.");
@@ -153,16 +194,26 @@ if (
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
 
+<<<<<<< HEAD
           {/* Phone Number */}
           <input
             type="tel"
             name="phone"
             placeholder="Phone Number *"
             value={formData.phone}
+=======
+          {/* Country/State */}
+          <input
+            type="text"
+            name="country"
+            placeholder="Country/State *"
+            value={formData.country}
+>>>>>>> 8678a27dbd5e92fea84c27e92521586b01983622
             onChange={handleChange}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
 
+<<<<<<< HEAD
 
           
           {/* US State Dropdown */}
@@ -227,6 +278,8 @@ if (
           </select>
 
 
+=======
+>>>>>>> 8678a27dbd5e92fea84c27e92521586b01983622
           {/* Nursing Role (Dropdown) */}
           <select
             name="role"
@@ -268,6 +321,7 @@ if (
             <label className="flex items-center">
               <input
                 type="checkbox"
+<<<<<<< HEAD
                 name="checkbox4"
                 checked={formData.checkbox4}
                 onChange={handleChange}
@@ -288,6 +342,8 @@ if (
             <label className="flex items-center">
               <input
                 type="checkbox"
+=======
+>>>>>>> 8678a27dbd5e92fea84c27e92521586b01983622
                 name="checkbox2"
                 checked={formData.checkbox2}
                 onChange={handleChange}
@@ -398,6 +454,7 @@ if (
               >
                 ✕
               </button>
+<<<<<<< HEAD
 <h2 className="text-xl font-bold mb-4">
   {openModal === "terms"
     ? "Terms & Conditions"
@@ -449,11 +506,64 @@ a. Terms may be updated at any time. Continued use constitutes acceptance.`
     : openModal === "nda"
     ? `Effective Date: Upon User’s Acceptance
 
+=======
+              <h2 className="text-xl font-bold mb-4">
+                {openModal === "terms"
+                  ? "Terms & Conditions"
+                  : "Beta Tester NDA"}
+              </h2>
+              <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+                {openModal === "terms"
+                  ? `Welcome to the NurseMoves Beta Program. By participating, you agree to the following terms and conditions:
+
+                    1. Use of Beta Software
+                      a.The app is provided solely for personal evaluation purposes.
+                      b.Beta testers may not use the app for commercial purposes.
+
+                    2. Eligibility
+                      a.Participation is limited to registered nurses selected for the beta program.
+                      b.All users must be at least 18 years old.
+
+                    3. Confidential Feedback
+                      a.Any feedback, bug reports, or suggestions submitted become the property of NurseMoves.
+                      b.Testers agree that NurseMoves may use anonymized feedback for product development, research, or marketing.
+
+                    4. No Reverse Engineering
+                      a.Testers shall not attempt to decompile, reverse engineer, or extract source code.
+
+                    5. Account & Security
+                      a.Testers are responsible for keeping login credentials confidential.
+                      b.Unauthorized access to another account is strictly prohibited.
+
+                    6. Privacy & Data Usage
+                      a.Tester data will be handled in accordance with U.S. data privacy laws and NurseMoves’ Privacy Policy.
+                      b.Testers consent to the collection of usage data for app improvement purposes.
+
+                    7. Termination
+                      a.NurseMoves may revoke beta access at any time for violation of these terms.
+                      b.Testers may withdraw from the beta program at any time by notifying NurseMoves.
+
+                    8. No Warranty
+                      a.The app is provided “as-is”. NurseMoves does not guarantee that it is error-free or uninterrupted.
+                      b.Use of the beta software is at your own risk.
+
+                    9. Limitation of Liability
+                      a.NurseMoves is not liable for any damages or losses resulting from participation in the beta program.
+
+                    10. Modifications
+                      a.NurseMoves may update the Terms & Conditions at any time.
+                      b.Testers will be notified of any significant changes. Continued participation constitutes acceptance of updated terms.`
+
+
+                  : `Effective Date: Upon User’s Acceptance
+Parties:
+>>>>>>> 8678a27dbd5e92fea84c27e92521586b01983622
 This Beta Tester Non-Disclosure and Use Agreement (“Agreement”) is entered into between Nurse Moves, LLC and the individual user completing the registration form.
 
 By clicking “I Accept”, Tester agrees to be legally bound by this Agreement.
 
 1. Purpose of Agreement
+<<<<<<< HEAD
 Tester is granted limited, revocable access to a closed beta version of the platform solely for evaluation and feedback.
 
 2. Confidential Information
@@ -513,6 +623,100 @@ Failure to comply may result in loss of access.`
   }
 </p>
 
+=======
+
+Tester is granted limited, revocable access to a closed beta version of the Company’s mobile and/or web platform (“Beta Product”) solely for evaluating performance, identifying issues, and providing feedback to the Company.
+
+2. Confidential Information
+
+“Confidential Information” includes, without limitation:
+
+Product features, screens, workflows, UI/UX, designs, wireframes
+
+System behavior, backend logic, architecture
+
+Business models, pricing, internal strategy
+
+Documentation, instructions, testing processes
+
+Communications between Company and Tester
+
+Analytics, crash logs, performance metrics
+
+All feedback, bug reports, and insights
+
+3. Tester Responsibilities
+
+Tester agrees to:
+
+Maintain strict confidentiality of all Beta Product information.
+
+Not disclose, copy, screenshot, record, or publicly share any aspect of the Beta Product.
+
+Use the Beta Product only for testing and evaluation.
+
+Provide voluntary feedback and report issues.
+
+Immediately notify the Company of breaches or unauthorized access.
+
+The Company may collect usage analytics, crash logs, diagnostic data, and performance metrics solely for testing and product improvement.
+
+4. Intellectual Property
+
+All intellectual property rights in the Beta Product remain exclusively with the Company. Tester receives no ownership or license beyond limited testing access.
+
+Tester grants the Company a perpetual, royalty-free license to use feedback for improvement purposes.
+
+5. User-Generated Content (UGC) — Added as per your request
+
+Any content, ideas, materials, routines, text, video, audio, creative work, or intellectual submissions provided by the Tester during the beta program (“User Content”) remain the sole property of the Tester or original creator.
+
+By participating in the beta, Tester grants the Company a limited, non-exclusive, royalty-free license to use User Content only for:
+
+testing functionality
+
+internal evaluation
+
+improving the platform
+
+operational purposes related to the beta
+
+This Agreement does not assign or transfer ownership of User Content to the Company.
+
+Tester warrants that all User Content provided is owned by them or that they have the legal right to submit it.
+
+6. Disclaimer & Limitation of Liability
+
+The Beta Product is provided “AS IS,” without warranties of any kind.
+Company is not liable for any data loss, errors, or damages arising from beta use.
+
+The Company’s total liability under this Agreement is limited to USD $100.
+
+7. Term & Termination
+
+This Agreement remains in effect until the Company ends the beta program or Tester’s access is revoked.
+Confidentiality obligations survive indefinitely.
+
+The Company may terminate access at any time without notice.
+
+8. Governing Law & Remedies
+
+This Agreement is governed by the laws of the State of Illinois, USA.
+Any breach of confidentiality may result in injunctive relief and monetary damages.
+Notices may be sent electronically to the email provided by Tester.
+
+9. Digital Acceptance
+
+By checking the acceptance box and clicking “I Accept the NDA and Terms & Conditions”, Tester acknowledges:
+
+They have read, understood, and agree to this Agreement.
+
+They consent to electronic signature and electronic delivery of records.
+
+Their acceptance constitutes a legally binding digital signature.
+`}
+              </p>
+>>>>>>> 8678a27dbd5e92fea84c27e92521586b01983622
             </motion.div>
           </motion.div>
         )}

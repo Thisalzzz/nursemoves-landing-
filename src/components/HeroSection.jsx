@@ -22,10 +22,17 @@ const HeroSection = () => {
       >
         <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
           Welcome to the{" "}
+<<<<<<< HEAD
           <span className="text-blue-500">NurseMoves Beta Experience</span> —{" "}
           <br />
           You’re Shaping the Future of{" "}
           <span className="text-blue-500">Nurse Wellness & Preventing Burnout.</span>
+=======
+          <span className="text-blue-700">NurseMoves Beta Experience</span> —{" "}
+          <br />
+          You’re Shaping the Future of{" "}
+          <span className="text-blue-600">Nurse Wellness.</span>
+>>>>>>> 8678a27dbd5e92fea84c27e92521586b01983622
         </h1>
 
         <p className="mt-6 text-lg text-gray-700 leading-relaxed">
