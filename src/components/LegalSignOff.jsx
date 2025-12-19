@@ -8,8 +8,9 @@ const LegalSignOff = () => {
 const [formData, setFormData] = useState({
   fullName: "",
   email: "",
-  phone: "",          //  NEW
-  state: "",          //  NEW (US states dropdown)
+  phone: "",
+  state: "",
+  city: "",          // ✅ NEW
   role: "",
   checkbox1: false,
   checkbox2: false,
@@ -42,8 +43,9 @@ const [formData, setFormData] = useState({
 if (
   !formData.fullName ||
   !formData.email ||
-  !formData.phone ||     // ✅
-  !formData.state ||     // ✅
+  !formData.phone ||
+  !formData.state ||
+  !formData.city ||     // NEW
   !formData.role ||
   !formData.signature ||
   !formData.checkbox1 ||
@@ -98,6 +100,7 @@ if (
         email: "",
         phone: "",
         state: "",
+        city: "",          // RESET
         role: "",
         checkbox1: false,
         checkbox2: false,
@@ -225,6 +228,17 @@ if (
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
           </select>
+
+          {/* City (Manual Input) */}
+          <input
+            type="text"
+            name="city"
+            placeholder="City *"
+            value={formData.city}
+            onChange={handleChange}
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
+
 
 
           {/* Nursing Role (Dropdown) */}
